@@ -1,23 +1,22 @@
 pipeline {
-    agent any {
+agent any 
 
-        stages {
-            stage ('Checkout') {
-                steps {
-                    checkout scm
-                }
+    stages {
+        stage ('Checkout') {
+            steps {
+                checkout scm
             }
+        }
 
-            stage ('Build') {
-                steps {
-                    echo "Building"
-                }
+        stage ('Build') {
+            steps {
+                echo "Building"
             }
+        }
 
-            stage {
-                steps {
-                    echo 'Testing'
-                }
+        stage ('Test') {
+            steps {
+                echo 'Testing'
             }
         }
     }
