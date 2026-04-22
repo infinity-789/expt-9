@@ -2,12 +2,12 @@ import java.util.*;
 
 class BankAccount {
     double balance = 900;
-    public void deposit (double amount) {
+    public void deposit (double amount1) {
 
-        if (amount <= 0) {
+        if (amount1 <= 0) {
             throw new IllegalArgumentException("Invalid amount");
         }
-        balance += amount;
+        balance += amount1;
     }
 
     public void withdraw (double amount) {
@@ -19,7 +19,7 @@ class BankAccount {
 
     public double getBalance () {
         return balance;
-    }
+    }   
 
     public static void main(String[] args) {
         BankAccount account = new BankAccount();
