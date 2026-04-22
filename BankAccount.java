@@ -24,7 +24,7 @@ class BankAccount {
     public static void main(String[] args) {
         BankAccount account = new BankAccount();
 
-        System.out.println("Initial balance = " + account.getBalance());
+        System.out.println("Initial balance=" + account.getBalance());
         account.deposit(100);
         System.out.println("Balance after depositing = " + account.getBalance());
         account.withdraw(50);
